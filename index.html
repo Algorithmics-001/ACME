@@ -23,10 +23,19 @@
             text-align: center;
         }
         nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-        }
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+        margin: 0 10px;
+        border-color: #000;
+        border-bottom: 2px solid #000;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid #fff;
+    }
         section {
             padding: 20px;
         }
@@ -133,7 +142,7 @@
                     In case participants are unable to bring their own laptops, we will only provide Paint, Canva and Google Slides for their use.
                 </li>
             </ul>
-        <a class="download-button">Download Assets</a>
+        <a href="/Assets.zip" class="download-button">Download Assets</a>
     </section>
     <section id="event2" class="event-page">
         <h2>Web Wizards Rules</h2>
