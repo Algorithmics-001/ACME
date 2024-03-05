@@ -92,6 +92,16 @@
             align-items: center;
             display: flex;
         }
+        .pages-div {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .event-page h2 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -111,6 +121,7 @@
         <a href="#" onclick="showEvent('event2')">Web Wizards</a>
         <a href="#" onclick="showEvent('event3')">Digital Poster Creation</a>
     </nav>
+<div class="pages-div">
     <section id="event1" class="event-page active">
         <h2>Digital Logo Designing</h2>
             <ul>
@@ -124,10 +135,11 @@
                     Topic/Theme will be given on the spot.
                 </li>
                 <li>
-                    At the beginning, 15 minutes will be given to build a rough sketch of logo on an A4 size sheet. No internet access will be allowed during these 20 minutes.
+                    At the beginning, 15 minutes will be given to build a rough sketch of logo on an A4 size sheet.
+                    <br>No internet access will be allowed during these 20 minutes.
                 </li>
                 <li>
-                    Following that, participants will have 60 minutes to recreate their initial logo sketch using any one of the permitted design tools. Internet access will be allowed.
+                    Following that, participants will have 60 minutes to recreate their initial logo sketch <br>using any one of the permitted design tools. Internet access will be allowed.
                 </li>
                 <li>
                     Permitted Design Tools: Google Slides, Canva, Adobe Photoshop, Corel Draw, MSOffice, Paint
@@ -139,10 +151,12 @@
                     Participants are encouraged to bring their own laptops, although computers will be available for use during the event.
                 </li>
                 <li>
-                    In case participants are unable to bring their own laptops, we will only provide Paint, Canva and Google Slides for their use.
+                    In case participants are unable to bring their own laptops, <br>we will only provide Paint, Canva and Google Slides for their use.
                 </li>
             </ul>
-        <a href="/Assets.zip" class="download-button">Download Assets</a>
+            <center>
+                <a href="/Assets.zip" class="download-button">Download Assets</a>
+            </center>
     </section>
     <section id="event2" class="event-page">
         <h2>Web Wizards Rules</h2>
@@ -175,7 +189,7 @@
         </ul>
         
     </section>
-
+</div>
     <script>
         function showEvent(eventId) {
             const eventPages = document.querySelectorAll('.event-page');
