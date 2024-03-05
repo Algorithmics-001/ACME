@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GNE's ACME</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFDD0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fffdd0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
         color: #fff;
         text-decoration: none;
         padding: 10px;
@@ -31,176 +31,221 @@
         border-color: #000;
         border-bottom: 2px solid #000;
         transition: border-color 0.3s ease-in-out;
-    }
+      }
 
-    nav a:hover {
+      nav a:hover {
         border-bottom: 2px solid #fff;
-    }
-        section {
-            padding: 20px;
-        }
-        .event-page {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
-        .download-button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .footer-logo {
-            width: 100px; /* Adjust size as needed */
-            height: auto;
-        }
-        .menu {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .menu-item {
-            display: inline;
-            margin-right: 10px;
-        }
-        .menu-item a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .header-logo {
-            width: 70px;
-        }
-        .heading {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-        .pages-div {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-        .event-page h2 {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
+      }
+      section {
+        padding: 20px;
+      }
+      .event-page {
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+      .download-button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .footer-logo {
+        width: 100px; /* Adjust size as needed */
+        height: auto;
+      }
+      .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu-item {
+        display: inline;
+        margin-right: 10px;
+      }
+      .menu-item a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .header-logo {
+        width: 70px;
+      }
+      .heading {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .pages-div {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .event-page h2 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <table class="heading">
-            <td>
-                <!-- <img src="https://causmic.gndec.ac.in/sites/default/files/CC-LOGO-1.png" alt="Causmic Club" class="header-logo"> -->
-                
-            </td>
-            <td>
-                <h1 class="heading">Welcome to GNE's ACME</h1>
-            </td>
-        </table>
+      <table class="heading">
+        <td>
+          <!-- <img src="https://causmic.gndec.ac.in/sites/default/files/CC-LOGO-1.png" alt="Causmic Club" class="header-logo"> -->
+        </td>
+        <td>
+          <h1 class="heading">Welcome to GNE's ACME</h1>
+        </td>
+      </table>
     </header>
     <nav>
-        <a href="#" onclick="showEvent('event1')">Digital Logo Designing</a>
-        <a href="#" onclick="showEvent('event2')">Web Wizards</a>
-        <a href="#" onclick="showEvent('event3')">Digital Poster Creation</a>
+      <a href="#" onclick="showEvent('event1')">Digital Logo Designing</a>
+      <a href="#" onclick="showEvent('event2')">Web Wizards</a>
+      <a href="#" onclick="showEvent('event3')">Digital Poster Creation</a>
     </nav>
-<div class="pages-div">
-    <section id="event1" class="event-page active">
+    <div class="pages-div">
+      <section id="event1" class="event-page active">
         <h2>Digital Logo Designing</h2>
-            <ul>
-                <li>
-                    One team must comprise of 2 participants.
-                </li>
-                <li>
-                    2 teams allowed per institution.
-                </li>
-                <li>
-                    Topic/Theme will be given on the spot.
-                </li>
-                <li>
-                    At the beginning, 15 minutes will be given to build a rough sketch of logo on an A4 size sheet.
-                    <br>No internet access will be allowed during these 20 minutes.
-                </li>
-                <li>
-                    Following that, participants will have 60 minutes to recreate their initial logo sketch <br>using any one of the permitted design tools. Internet access will be allowed.
-                </li>
-                <li>
-                    Permitted Design Tools: Google Slides, Canva, Adobe Photoshop, Corel Draw, MSOffice, Paint
-                </li>
-                <li>
-                    Size: 800 * 800 pixels
-                </li>
-                <li>
-                    Participants are encouraged to bring their own laptops, although computers will be available for use during the event.
-                </li>
-                <li>
-                    In case participants are unable to bring their own laptops, <br>we will only provide Paint, Canva and Google Slides for their use.
-                </li>
-            </ul>
-            <center>
-                <a href="/ACME_Assets.rar" class="download-button">Download Assets</a>
-            </center>
-    </section>
-    <section id="event2" class="event-page">
+        <ul>
+          <li>One team must comprise of 2 participants.</li>
+          <li>2 teams allowed per institution.</li>
+          <li>Topic/Theme will be given on the spot.</li>
+          <li>
+            At the beginning, 15 minutes will be given to build a rough sketch
+            of logo on an A4 size sheet.
+            <br />No internet access will be allowed during these 15 minutes.
+          </li>
+          <li>
+            Following that, participants will have 60 minutes to recreate their
+            initial logo sketch <br />using any one of the permitted design
+            tools. Internet access will be allowed.
+          </li>
+          <li>
+            Permitted Design Tools: Google Slides, Canva, Adobe Photoshop, Corel
+            Draw, MSOffice, Paint
+          </li>
+          <li>Size: 800 * 800 pixels</li>
+          <li>
+            Participants are encouraged to bring their own laptops, although
+            computers will be available for use during the event.
+          </li>
+          <li>
+            In case participants are unable to bring their own laptops, <br />we
+            will only provide Paint, Canva and Google Slides for their use.
+          </li>
+        </ul>
+        <br />
+        <h2>Theme</h2>
+        <ul>
+          <li>A furniture and woodwork company known as Robin's</li>
+          <li>
+            An NGO dedicated to provide food and water to the poor called
+            Lifeline
+          </li>
+        </ul>
+        <center>
+          <a href="https://forms.gle/E8G9FDQ7FUMHaVKE8" class="download-button"
+            >Submit File</a
+          >
+        </center>
+      </section>
+      <section id="event2" class="event-page">
         <h2>Web Wizards Rules</h2>
         <ul>
-            <li>One team must comprise of 2 participants.</li>
-            <li>2 teams allowed per institution.</li>
-            <li>Theme will be given on the spot. All the assets will be provided.</li>
-            <li>Time Limit: 90 minutes</li>
-            <li>Compulsory Languages- HTML & CSS</li>
-            <li>Optional Language- JavaScript</li>
-            <li>Permitted Platform- Any offline code/text editor.</li>
-            <li>Internet access will not be allowed.</li>
-            <li>Participants are encouraged to bring their own laptops, although computers will be available for use during the event.</li>
-            <li>In case participants are unable to bring their own laptops, we will only provide Notepad and VS Code for their use.</li>
-            <li>Only 1 device is allowed per team.</li>
-        </ul>        
-    </section>
-    <section id="event3" class="event-page">
+          <li>One team must comprise of 2 participants.</li>
+          <li>2 teams allowed per institution.</li>
+          <li>
+            Theme will be given on the spot. All the assets will be provided.
+          </li>
+          <li>Time Limit: 90 minutes</li>
+          <li>Compulsory Languages- HTML & CSS</li>
+          <li>Optional Language- JavaScript</li>
+          <li>Permitted Platform- Any offline code/text editor.</li>
+          <li>Internet access will not be allowed.</li>
+          <li>
+            Participants are encouraged to bring their own laptops, although
+            computers will be available for use during the event.
+          </li>
+          <li>
+            In case participants are unable to bring their own laptops, we will
+            only provide Notepad and VS Code for their use.
+          </li>
+          <li>Only 1 device is allowed per team.</li>
+        </ul>
+        <center>
+          <a href="/ACME_Assets.rar" class="download-button">Download Assets</a>
+        </center>
+        <center>
+          <a href="https://forms.gle/3EEpA86hdAAys4u4A" class="download-button"
+            >Submit zip File</a
+          >
+        </center>
+      </section>
+      <section id="event3" class="event-page">
         <h2>Digital Poster Creation Rules</h2>
         <ul>
-            <li>One team must comprise of 2 participants.</li>
-            <li>2 teams allowed per institution.</li>
-            <li>Topic/Theme will be given on the spot.</li>
-            <li>Time Limit: 60 minutes</li>
-            <li>Permitted Design Tools: Canva, Adobe Photoshop, Corel Draw, MS-Office, Paint</li>
-            <li>Internet access will be allowed only for using Canva and Google Slides.</li>
-            <li>Size: 1080 * 1920 pixels (width * height)</li>
-            <li>Participants are encouraged to bring their own laptops, although computers will be available for use during the event.</li>
-            <li>In case participants are unable to bring their own laptops, we will only provide Paint and Canva for their use.</li>
+          <li>One team must comprise of 2 participants.</li>
+          <li>2 teams allowed per institution.</li>
+          <li>Topic/Theme will be given on the spot.</li>
+          <li>Time Limit: 60 minutes</li>
+          <li>
+            Permitted Design Tools: Canva, Adobe Photoshop, Corel Draw,
+            MS-Office, Paint
+          </li>
+          <li>
+            Internet access will be allowed only for using Canva and Google
+            Slides.
+          </li>
+          <li>Size: 1080 * 1920 pixels (width * height)</li>
+          <li>
+            Participants are encouraged to bring their own laptops, although
+            computers will be available for use during the event.
+          </li>
+          <li>
+            In case participants are unable to bring their own laptops, we will
+            only provide Paint and Canva for their use.
+          </li>
         </ul>
-        
-    </section>
-</div>
+        <h2>Theme</h2>
+        <ul>
+            <li>The Era of 5G and Beyond</li>
+            <li>Space Exploration: Beyond Earth's Boundaries</li>
+        </ul>
+        <center>
+          <a href="https://forms.gle/mra8ZwKHF7RCmPuV9" class="download-button"
+            >Submit File</a
+          >
+        </center>
+      </section>
+    </div>
     <script>
-        function showEvent(eventId) {
-            const eventPages = document.querySelectorAll('.event-page');
-            eventPages.forEach(page => {
-                if (page.id === eventId) {
-                    page.classList.add('active');
-                } else {
-                    page.classList.remove('active');
-                }
-            });
-        }
+      function showEvent(eventId) {
+        const eventPages = document.querySelectorAll(".event-page");
+        eventPages.forEach((page) => {
+          if (page.id === eventId) {
+            page.classList.add("active");
+          } else {
+            page.classList.remove("active");
+          }
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
